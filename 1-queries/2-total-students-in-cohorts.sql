@@ -1,1 +1,3 @@
-select count(students) from students where cohort_id in (1,2,3);
+SELECT  COUNT(students)
+FROM students
+WHERE cohort_id IN (1, 2, 3);
