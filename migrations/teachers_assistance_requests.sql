@@ -3,8 +3,9 @@ CREATE TABLE teachers (
   name VARCHAR(255) NOT NULL,
   is_active BOOLEAN DEFAULT TRUE,
   start_date date,
-  end_date date,
+  end_date date
 );
+
 CREATE TABLE assistance_requests (
   id SERIAL PRIMARY KEY NOT NULL,
   student_id INTEGER REFERENCES students(id) ON DELETE CASCADE,
